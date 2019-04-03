@@ -15,3 +15,7 @@ We're using the open-source Kaggle dataset [Tappy Keystroke Data with Parkinson'
 The dataset contains keystroke logs collected from over 200 subjects (103 PD subjects (32 with mild PD severity) and the remainder non-PD controls), with and without Parkinson's Disease (PD), as they typed normally on their own computer (without any supervision) over a period of weeks or months (having initially installed a custom keystroke recording app, Tappy). This dataset has been collected and analyzed in order to indicate that the routine interaction with computer keyboards can be used to detect changes in the characteristics of finger movement in the early stages of PD.
 
 ## References
+
+- [High-Accuracy Detection of Early Parkinson's Disease Using Multiple Characteristics of Finger Movement While Typing](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0188226#sec008)
+- [Predicting Severity of Parkinson's Disease with Typing Behavior: A Machine Learning Approach](https://dspace.library.uu.nl/handle/1874/373466)
+- [Less is More: Univariate Modelling to Detect Early Parkinson’s Disease from Keystroke Dynamics](https://link.springer.com/chapter/10.1007/978-3-030-01771-2_28)

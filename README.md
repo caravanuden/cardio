@@ -1,31 +1,32 @@
-# Parkinson's diagnosis
+# Cardiovascular disease diagnosis
 
 For the Dartmouth class COSC 89.20, Data Science for Health. Project members are Srishti Bagchi, Rachael Chacko, and Cara Van Uden.
 
-## Objective
+## Overview
 
-Here, we will replicate the PLOS ONE study. We will extend their work by seeing which behavioral markers of PD are first present in early-stage (non-severe) PD and see how these behavioral markers change with increased severity of the disease. Through this analysis, we hope to identify early markers of PD for improved early-stage PD diagnosis. We will also potentially extend the previous ML models to implement PD classification with a deep neural network (DNN).
+Cardiovascular disease is the leading cause of death throughout the United States, with an estimated 840,768 deaths in 2016. However, through simple lifestyle changes and screening, nearly 200,000 deaths per year could be avoided. In this paper, we explore several machine learning approaches to detect the presence of cardiovascular disease using only standard health information. We leverage both traditional machine learning and state-of-the-art deep learning techniques. The machine learning techniques include a support vector machine (SVM) with a Gaussian RBF kernel, a Naive Bayes classifier, and a random forest (RF) classifier. For our deep learning technique, we also use a multilayer feedforward neural network for this cardiovascular disease detection.
 
-## Innovation
+In addition to using these methods to detect cardiovascular disease, we will also investigate which data features are most indicative of disease. Our dataset has standard health information and information on the presence/absence of cardiovascular disease for over 70,000 patients. Here, our objective is not only to design a classifier to identify the presence of cardiovascular disease but also to determine which features and types of data (demographic, examination, and social history) are most useful for predicting disease. With the information gained from this study, physicians could potentially alter their current case history methods to obtain more useful data from their patients. The results from this paper could also aid in streamlining the diagnostic process and improving diagnostic accuracy. 
+
+Similar studies have also generated models to predict heart disease based off of more detailed examination data, such as that obtained from ECG, fluoroscopy, and myocardial scintigraphy. While these tests can provide detailed data, they can often be expensive to both patients and healthcare facilities and may not always be useful toward the diagnostic process. If we can demonstrate that our model can achieve a similar level of accuracy with data that can be obtained more quickly and easily than that from the typical medical exam (especially if this information could be instantaneously gathered via a mobile health device such as a FitBit), then this technology could streamline the diagnostic process and bring medicine to the home.
 
 ## Dataset
 
-We're using the open-source Kaggle dataset [Tappy Keystroke Data with Parkinson's Patients](https://www.kaggle.com/valkling/tappy-keystroke-data-with-parkinsons-patients). This is the keystroke dataset for the study titled 'High-accuracy detection of early Parkinson's Disease using multiple characteristics of finger movement while typing'. This research paper is [published](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0188226#sec008) in PLOS ONE.
+The cardiovascular disease dataset is an open-source [dataset](https://www.kaggle.com/sulianova/cardiovascular-disease-dataset) found on Kaggle. The data consists of 70,000 patient records (34,979 presenting with cardiovascular disease and 35,021 not presenting with cardiovascular disease) and contains 11 features (4 demographic, 4 examination, and 3 social history):
 
-The dataset contains keystroke logs collected from over 200 subjects (103 PD subjects (32 with mild PD severity) and the remainder non-PD controls), with and without Parkinson's Disease (PD), as they typed normally on their own computer (without any supervision) over a period of weeks or months (having initially installed a custom keystroke recording app, Tappy). This dataset has been collected and analyzed in order to indicate that the routine interaction with computer keyboards can be used to detect changes in the characteristics of finger movement in the early stages of PD.
+- Age (demographic)
+- Height (demographic)
+- Weight (demographic)
+- Gender (demographic)
+- Systolic blood pressure (examination)
+- Diastolic blood pressure (examination)
+- Cholesterol (examination)
+- Glucose (examination)
+- Smoking (social history)
+- Alcohol intake (social history)
+- Physical activity (social history)
 
-For the user metadata, for each user we have BirthYear, Gender, Parkinsons (PD or control), DiagnosisYear, Sided (left or right), Impact (of the PD, severe or less severe), Tremors, Unified Parkinson's Disease Scale (UPDRS) score, and whether the patient is being treated with Levadopa, DA, MOA-B inhibitors, or
-
-For the keystroke data, each file contains comma separated keystroke data for one month for a particular user. The filename comprises the 10 character code (matching the user details file) and the YYMM of the data. The fields are:
-
-- UserKey: 10 character code for that user
-- Date: YYMMDD
-- Timestamp: HH:MM:SS.SSS
-- Hand: L or R key pressed
-- Hold time: Time between press and release for current key mmmm.m (milliseconds)
-- Direction: Previous to current LL, LR, RL, RR (and S for a space key)
-- Latency time: Time between pressing the previous key and pressing current key (milliseconds)
-- Flight time: Time between release of previous key and press of current key (milliseconds)
+Some features are numerical, others are assigned categorical codes, and others are binary values. The classes are balanced, but there were more female patients observed than male patients. Further, the continuous-valued features are almost normally distributed; however, most categorical-valued features are skewed towards "normal," as opposed to "high" levels of potentially pathological features. 
 
 ## References
 

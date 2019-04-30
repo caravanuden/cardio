@@ -28,8 +28,28 @@ The cardiovascular disease dataset is an open-source [dataset](https://www.kaggl
 
 Some features are numerical, others are assigned categorical codes, and others are binary values. The classes are balanced, but there were more female patients observed than male patients. Further, the continuous-valued features are almost normally distributed; however, most categorical-valued features are skewed towards "normal," as opposed to "high" levels of potentially pathological features. 
 
-## References
+## TODONE
+RF and SVM from EDA
 
-- [High-Accuracy Detection of Early Parkinson's Disease Using Multiple Characteristics of Finger Movement While Typing](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0188226#sec008)
-- [Predicting Severity of Parkinson's Disease with Typing Behavior: A Machine Learning Approach](https://dspace.library.uu.nl/handle/1874/373466)
-- [Less is More: Univariate Modelling to Detect Early Parkinson’s Disease from Keystroke Dynamics](https://link.springer.com/chapter/10.1007/978-3-030-01771-2_28)
+## TODO
+
+#### Paper
+
+Expand related works:
+https://ieeexplore.ieee.org/abstract/document/4358915/
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4468223/
+https://link.springer.com/article/10.1007/s10916-016-0536-z
+https://www.sciencedirect.com/science/article/pii/S093336571100056X
+
+#### Code
+Predict on cardiovascular disease (target) based on original data - improving RF/SVM and trying DNN
+Naive Bayes to get prob assigned to each class (risk score)
+
+Predicting other target vars in our dataset (BMI, blood pressure)
+
+Combining with UCI dataset (Cara)
+- train to predict UCI blood sugar (bin), heart rate acheived during exercise (cont), exercise-induced angina (bin) with subset of our data
+- fill in our data with these vals using the trained model
+- see if this improves prediction
+
+## References

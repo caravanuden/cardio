@@ -43,13 +43,13 @@ https://link.springer.com/article/10.1007/s10916-016-0536-z
 https://www.sciencedirect.com/science/article/pii/S093336571100056X
 
 #### Code
-- Predict on cardiovascular disease (target) based on original data
+- Predict on cardiovascular disease (target) based on original data (Rachael)
   - improving RF/SVM
   - trying DNN
-  - Naive Bayes to get prob/risk score assigned to each class
+  - Naive Bayes or odds ratio to get prob/risk score assigned to each class
 
-- Predicting other target vars (BMI, blood pressure) in our dataset 
-  - Naive Bayes to get prob/risk score assigned to each class
+- Predicting other target vars (BMI, blood pressure) in our dataset (Srishti)
+  - Naive Bayes or odds ratio to get prob/risk score assigned to each class
 
 - Combining with UCI dataset (Cara)
   - train to predict UCI blood sugar (bin), heart rate acheived during exercise (cont), exercise-induced angina (bin) with subset of our data

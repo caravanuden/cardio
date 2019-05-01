@@ -36,20 +36,24 @@ RF and SVM from EDA
 #### Paper
 
 Expand related works:
+
 https://ieeexplore.ieee.org/abstract/document/4358915/
 https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4468223/
 https://link.springer.com/article/10.1007/s10916-016-0536-z
 https://www.sciencedirect.com/science/article/pii/S093336571100056X
 
 #### Code
-Predict on cardiovascular disease (target) based on original data - improving RF/SVM and trying DNN
-Naive Bayes to get prob assigned to each class (risk score)
+- Predict on cardiovascular disease (target) based on original data
+  - improving RF/SVM
+  - trying DNN
 
-Predicting other target vars in our dataset (BMI, blood pressure)
+- Naive Bayes to get prob/risk score assigned to each class
 
-Combining with UCI dataset (Cara)
-- train to predict UCI blood sugar (bin), heart rate acheived during exercise (cont), exercise-induced angina (bin) with subset of our data
-- fill in our data with these vals using the trained model
-- see if this improves prediction
+- Predicting other target vars (BMI, blood pressure) in our dataset 
+
+- Combining with UCI dataset (Cara)
+  - train to predict UCI blood sugar (bin), heart rate acheived during exercise (cont), exercise-induced angina (bin) with subset of our data
+  - fill in our data with these vals using the trained model
+  - see if this improves prediction
 
 ## References
